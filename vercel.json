@@ -1,15 +1,16 @@
 {
   "version": 2,
+  "name": "maquer-ai-gateway",
   "builds": [
     {
-      "src": "gateway.py",
+      "src": "api/index.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "gateway.py"
+      "dest": "api/index.py"
     }
   ]
 }
